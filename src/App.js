@@ -1,10 +1,9 @@
-import { useState } from 'react';
 import './App.css';
-import NotificationList from './chapter_06/NotificationList';
+import CardList from './test/CardList';
 
 function App() {
   return(
-    <NotificationList/>
+    <CardList/>
   )
 }
 
