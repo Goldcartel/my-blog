@@ -16,33 +16,39 @@ const styles = {
         borderRadius: 25,
     },
 
-    cardform: {
-        marginLeft: 10,
+    textForm: {
+        marginLeft:8,
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
     },
-
-    text: {
-        color: "black",
-        fontsize: "16px",
+    
+    nameTextForm: {
+        fontSize:16,
         fontWeight: "bold",
     },
-}
 
+    explainFrom: {
+        fontSize:16,
+    },
+
+    arr: {
+        padding:"0.8rem",
+    }
+}
 
 function Card(props) {
     return (
         <div style={styles.wrapper}>
-            <div>
-                <img style={styles.img} src={`img/${props.logo}`}/>
+            <div style={styles.arr}>
+                <img style={styles.img} src={`img/${props.logo}`} />
             </div>
-            <div style={styles.cardform}>
-                <span style={styles.text}>{props.name}</span>
-                <span>{props.explain}</span>
+            <div>
+                <h1 style={styles.nameTextForm}>{props.name}</h1>
+                <h2 style={styles.explainFrom}>{props.explain}</h2>
             </div>
         </div>
     )
-}
+};
 
 export default Card;
