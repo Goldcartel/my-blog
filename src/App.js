@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import './App.css';
-import PracticeList from './test/PracticeList';
+import SignUp from './chapter_11/SignUp';
 
 function App() {
   return(
-    <PracticeList/>
+    <SignUp/>
   )
 }
 
