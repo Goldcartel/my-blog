@@ -52,7 +52,7 @@ const styles = {
 
 function Card(props) {
     const [count, setCount] = useState(0);
-    const increaseCount = ()=> setCount((count) => count+1)
+    const increaseCount = () => setCount((count) => count+1)
     return (
         <div style={styles.wrapper}>
             <div style={styles.arr}>

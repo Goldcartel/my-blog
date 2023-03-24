@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import './App.css';
-import CardList from './test/CardList';
+import LandingPage from './chapter_09/LandingPage';
 
 function App() {
   return(
-    <CardList/>
+    <LandingPage/>
   )
 }
 
