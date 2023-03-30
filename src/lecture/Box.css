@@ -1,0 +1,6 @@
+.box{
+    background-color: gold;
+    width: 100px;
+    height: 70px;
+    border: 2px dotted red;
+  }
