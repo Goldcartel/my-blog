@@ -1,16 +1,14 @@
-import React from 'react';
-import TodoItem from './TodoItem';
+import React, { Component } from 'react'
+import TodoItem from './TodoItem'
 
-export default class TodoBoard extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-    render() {
-        return (
-            <div>
-                <h1>Todo List</h1>
-                {this.props.todoList.map((item)=><TodoItem item = {item}/>)}
-            </div>
-        )
-    }
+export default class TodoBoard extends Component {
+  render() {
+    return (
+        <div className='dis'>
+        <h1>오늘 할 일</h1>
+        {this.props.todoList.map((value,index)=><TodoItem todoList={this.props.todoList} delItem={this.props.delItem} 
+        item={value} index={index} />)}
+    </div>
+    )
+  }
 }
