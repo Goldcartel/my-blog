@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import './App.css';
-import TodoBoard from './lecture/TodoBoard';
-import ProfileCard from './chapter_13/ProfileCard';
+import Blocks from './chapter_15/Blocks';
 function App() {
   return (
     <div className='App'>
-      <ProfileCard/>
+      <Blocks/>
     </div>
   )
 }
