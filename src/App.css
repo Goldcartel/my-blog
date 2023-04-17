@@ -1,14 +1,14 @@
-.App {
+.box {
+  border : 5px solid black;
+  width : 500px;
   text-align: center;
 }
 
-.todo-item {
+.item-img {
   width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 60px;
-  text-align: center;
-  border: 2px solid black;
-  border-radius: 25;
-  background-color: aquamarine;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
 }
